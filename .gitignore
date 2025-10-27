@@ -1,0 +1,171 @@
+# ===== ARCHIVOS SENSIBLES (LO MÁS IMPORTANTE) =====
+# Application properties con credenciales
+**/application.properties
+**/application-*.properties
+**/application.yml
+**/application-*.yml
+
+# Variables de entorno
+**/.env
+**/.env.*
+!**/.env.example
+
+# Docker y configuraciones
+**/Dockerfile
+**/docker-compose.yml
+**/docker-compose.*.yml
+
+# Archivos de configuración sensibles
+**/secrets/
+**/config/local/
+**/*-secret.*
+**/*-secrets.*
+
+
+# ===== JAVA / SPRING BOOT =====
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Spring Boot
+target/
+build/
+out/
+.gradle/
+bin/
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+
+# ===== INTELLIJ IDEA =====
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# IntelliJ específicos que quieres ignorar
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+.idea/shelf/
+.idea/dataSources/
+.idea/dataSources.ids
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+.idea/dbnavigator.xml
+.idea/gradle.xml
+.idea/libraries/
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/modules.xml
+.idea/*.iml
+.idea/modules/
+
+# Maven home manager
+.idea/mavenHomeManager.xml
+
+
+# ===== VS CODE =====
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+
+# ===== SISTEMA OPERATIVO =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+
+# ===== NODE.JS (si usas frontend) =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.npm
+.yarn/
+
+
+# ===== BASES DE DATOS =====
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.h2.db
+
+
+# ===== LOGS =====
+logs/
+*.log
+log/
+*.log.*
+
+
+# ===== OTROS =====
+# Archivos temporales
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.#*
+
+# Backups
+*.bak
+*.backup
+*.old
+
+# Certificados y keys
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.jks
+*.keystore
+
+
+# ===== EXCEPCIONES (archivos que SÍ quieres versionar) =====
+# Ejemplo de application.properties para desarrollo (sin secretos)
+!**/application.properties.example
+!**/application-example.properties
+!**/.env.example
