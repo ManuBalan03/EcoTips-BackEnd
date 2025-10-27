@@ -1,7 +1,5 @@
 # ===== ARCHIVOS SENSIBLES (LO MÁS IMPORTANTE) =====
 # Application properties con credenciales
-**/application.properties
-**/application-*.properties
 **/application.yml
 **/application-*.yml
 
